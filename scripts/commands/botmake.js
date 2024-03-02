@@ -1,16 +1,13 @@
 module.exports.config = {
-	name: "botmake",
-    version: "1.0.1",
-    permission: 0,
-    credits: "BADOL-KHAN",
-    prefix: true,
-    description: "ask any thing",
-    category: "admin",
-    usages: "",
-    cooldowns: 5,
-    dependencies: {
-        "openai": ""
-    }
+  name: "botmake",
+  version: "2.0.0",
+  permission: 0,
+  credits: "BADOL-KHAN",
+  description: "control admin lists",
+  prefix: false,
+  category: "admin",
+  usages: "admin [add/remove] [uid]",
+  cooldowns: 5,
 };
 module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOBAL,Currencies }) {
 const axios = global.nodemodule["axios"];
