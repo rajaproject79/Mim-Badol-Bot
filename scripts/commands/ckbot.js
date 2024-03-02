@@ -1,15 +1,20 @@
+const axios = require('axios');
+const jimp = require("jimp");
+const fs = require("fs");
 module.exports.config = {
-    name: "ckbot",
-  version: "1.0.0",
+  name: "ckbot",
+  version: "1.0.2",
   permission: 0,
   credits: "BADOL-KHAN",
-  description: "MCS-TM",
-  prefix: true, 
-  category: "usermcs", 
-  usages: "",
+  description: "beginner's guide",
+  prefix: true,
+  category: "guide",
+  usages: "[Shows Commands]",
   cooldowns: 5,
-  dependencies: {
-	}
+  envConfig: {
+    autoUnsend: true,
+    delayUnsend: 60
+  }
 };
 
 module.exports.run = async({api,event,args}) => {
